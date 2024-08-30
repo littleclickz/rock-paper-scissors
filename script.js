@@ -131,6 +131,7 @@ else if (roundResult === "You win! Paper beats rock." || roundResult === "You wi
 }
 console.log("Your score is: " + humanScore);
 
+console.log("The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you.");
 
 if (humanScore > computerScore) {
     console.log("Congratulations! You won the game!")
