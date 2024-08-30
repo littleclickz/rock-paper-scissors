@@ -10,3 +10,18 @@ function getComputerChoice() {
 }
 
 let computerChoice = getComputerChoice();
+
+function getHumanChoice() {
+    let userInput = prompt("Choose your weapon!");
+    if (userInput.toLowerCase() === "rock") {
+        return "rock";
+    }
+    else if (userInput.toLowerCase() === "paper") {
+        return "paper";
+    }
+    else {
+        return "scissors";
+    }
+}
+
+let humanChoice = getHumanChoice();
