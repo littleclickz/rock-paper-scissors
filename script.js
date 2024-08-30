@@ -72,3 +72,68 @@ else if (roundResult === "You win! Paper beats rock." || roundResult === "You wi
 }
 
 console.log("Your score is: " + humanScore);
+
+// everything under here makes additional rounds happen - but how do I wrap the playGame function around the above
+// stuff to clean up the code?
+
+var computerChoice = getComputerChoice();
+var humanChoice = getHumanChoice();
+playRound(humanChoice, computerChoice);
+var roundResult = playRound(humanChoice,computerChoice);
+console.log(roundResult);
+if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
+    computerScore ++;
+}
+else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
+    humanScore ++;
+}
+console.log("Your score is: " + humanScore);
+
+var computerChoice = getComputerChoice();
+var humanChoice = getHumanChoice();
+playRound(humanChoice, computerChoice);
+var roundResult = playRound(humanChoice,computerChoice);
+console.log(roundResult);
+if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
+    computerScore ++;
+}
+else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
+    humanScore ++;
+}
+console.log("Your score is: " + humanScore);
+
+var computerChoice = getComputerChoice();
+var humanChoice = getHumanChoice();
+playRound(humanChoice, computerChoice);
+var roundResult = playRound(humanChoice,computerChoice);
+console.log(roundResult);
+if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
+    computerScore ++;
+}
+else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
+    humanScore ++;
+}
+console.log("Your score is: " + humanScore);
+
+var computerChoice = getComputerChoice();
+var humanChoice = getHumanChoice();
+playRound(humanChoice, computerChoice);
+var roundResult = playRound(humanChoice,computerChoice);
+console.log(roundResult);
+if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
+    computerScore ++;
+}
+else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
+    humanScore ++;
+}
+console.log("Your score is: " + humanScore);
+
+if (humanScore > computerScore) {
+    console.log("Congratulations! You won the game!")
+}
+else if (humanScore < computerScore) {
+    console.log("You lost the game! Try again?")
+}
+else {
+    console.log("The game is a draw! Try again?")
+}
