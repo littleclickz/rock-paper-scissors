@@ -63,3 +63,12 @@ function playRound(humanChoice, computerChoice) {
 let roundResult = playRound(humanChoice,computerChoice);
 
 console.log(roundResult);
+
+if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
+    computerScore ++;
+}
+else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
+    humanScore ++;
+}
+
+console.log("Your score is: " + humanScore);
