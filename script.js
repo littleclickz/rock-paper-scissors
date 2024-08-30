@@ -9,7 +9,7 @@ function getComputerChoice() {
     else return "scissors";
 }
 
-const computerChoice = getComputerChoice();
+var computerChoice = getComputerChoice();
 
 function getHumanChoice() {
     let userInput = prompt("Choose your weapon!");
@@ -24,7 +24,7 @@ function getHumanChoice() {
     }
 }
 
-const humanChoice = getHumanChoice();
+var humanChoice = getHumanChoice();
 
 var humanScore = 0;
 
@@ -60,7 +60,7 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-let roundResult = playRound(humanChoice,computerChoice);
+var roundResult = playRound(humanChoice,computerChoice);
 
 console.log(roundResult);
 
