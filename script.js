@@ -16,23 +16,23 @@ rock.onclick = (event) => {
     var humanScore = 0;
     var computerScore = 0;
     var roundResult = playRound(humanChoice,computerChoice);
-    console.log(roundResult);
+    document.querySelector("#roundResult").innerText = playRound(humanChoice,computerChoice);
     if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
         computerScore ++;
     }
     else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
         humanScore ++;
     }
-    console.log("Your score is: " + humanScore);
-    console.log("The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you.");
+    document.querySelector("#roundScore").innerText = "Your score is: " + humanScore;
+    document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
     if (humanScore > computerScore) {
-        console.log("Congratulations! You won the game!")
+        document.querySelector("#endMessage").innerText = "Congratulations! You won the game!";
     }
     else if (humanScore < computerScore) {
-        console.log("You lost the game! Try again?")
+        document.querySelector("#endMessage").innerText = "You lost the game! Try again?";
     }
     else {
-        console.log("The game is a draw! Try again?")
+        document.querySelector("#endMessage").innerText = "The game is a draw! Try again?";
     }
 };
 
@@ -54,23 +54,23 @@ paper.onclick = (event) => {
     var humanScore = 0;
     var computerScore = 0;
     var roundResult = playRound(humanChoice,computerChoice);
-    console.log(roundResult);
+    document.querySelector("#roundResult").innerText = playRound(humanChoice,computerChoice);
     if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
         computerScore ++;
     }
     else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
         humanScore ++;
     }
-    console.log("Your score is: " + humanScore);
-    console.log("The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you.");
+    document.querySelector("#roundScore").innerText = "Your score is: " + humanScore;
+    document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
     if (humanScore > computerScore) {
-        console.log("Congratulations! You won the game!")
+        document.querySelector("#endMessage").innerText = "Congratulations! You won the game!";
     }
     else if (humanScore < computerScore) {
-        console.log("You lost the game! Try again?")
+        document.querySelector("#endMessage").innerText = "You lost the game! Try again?";
     }
     else {
-        console.log("The game is a draw! Try again?")
+        document.querySelector("#endMessage").innerText = "The game is a draw! Try again?";
     }
 };
 
@@ -92,23 +92,23 @@ scissors.onclick = (event) => {
     var humanScore = 0;
     var computerScore = 0;
     var roundResult = playRound(humanChoice,computerChoice);
-    console.log(roundResult);
+    document.querySelector("#roundResult").innerText = playRound(humanChoice,computerChoice);
     if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
         computerScore ++;
     }
     else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
         humanScore ++;
     }
-    console.log("Your score is: " + humanScore);
-    console.log("The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you.");
+    document.querySelector("#roundScore").innerText = "Your score is: " + humanScore;
+    document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
     if (humanScore > computerScore) {
-        console.log("Congratulations! You won the game!")
+        document.querySelector("#endMessage").innerText = "Congratulations! You won the game!";
     }
     else if (humanScore < computerScore) {
-        console.log("You lost the game! Try again?")
+        document.querySelector("#endMessage").innerText = "You lost the game! Try again?";
     }
     else {
-        console.log("The game is a draw! Try again?")
+        document.querySelector("#endMessage").innerText = "The game is a draw! Try again?";
     }
 };
 
@@ -141,7 +141,6 @@ function playRound(humanChoice, computerChoice) {
         return "It's a tie!";
     }
 }
-
 // everything under here makes additional rounds happen - but how do I wrap the playGame function around the above
 // stuff to clean up the code?
 
