@@ -76,7 +76,7 @@ console.log("Your score is: " + humanScore);
 // everything under here makes additional rounds happen - but how do I wrap the playGame function around the above
 // stuff to clean up the code?
 
-var computerChoice = getComputerChoice();
+/* var computerChoice = getComputerChoice();
 var humanChoice = getHumanChoice();
 playRound(humanChoice, computerChoice);
 var roundResult = playRound(humanChoice,computerChoice);
@@ -129,7 +129,7 @@ if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! 
 else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
     humanScore ++;
 }
-console.log("Your score is: " + humanScore);
+console.log("Your score is: " + humanScore); */
 
 console.log("The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you.");
 
