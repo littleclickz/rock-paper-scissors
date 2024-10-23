@@ -11,7 +11,25 @@ function getComputerChoice() {
 
 var computerChoice = getComputerChoice();
 
-function getHumanChoice() {
+let rock = document.querySelector("#rock");
+rock.onclick = (event) => {
+    let humanChoice = "rock";
+    playRound(humanChoice, computerChoice);
+};
+
+let paper = document.querySelector("#paper");
+paper.onclick = (event) => {
+    let humanChoice = "paper";
+    playRound(humanChoice, computerChoice);
+};
+
+let scissors = document.querySelector("#scissors");
+scissors.onclick = (event) => {
+    let humanChoice = "scissors";
+    playRound(humanChoice, computerChoice);
+};
+
+/* function getHumanChoice() {
     let userInput = prompt("Choose your weapon!");
     if (userInput.toLowerCase() === "rock") {
         return "rock";
@@ -24,7 +42,7 @@ function getHumanChoice() {
     }
 }
 
-var humanChoice = getHumanChoice();
+var humanChoice = getHumanChoice(); */
 
 var humanScore = 0;
 
