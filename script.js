@@ -25,14 +25,12 @@ rock.onclick = (event) => {
     }
 };
 
-/* let paper = document.querySelector("#paper");
+let paper = document.querySelector("#paper");
 paper.onclick = (event) => {
     let humanChoice = "paper";
     getComputerChoice();
     var computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
-    var humanScore = 0;
-    var computerScore = 0;
     var roundResult = playRound(humanChoice,computerChoice);
     document.querySelector("#roundResult").innerText = roundResult;
     if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
@@ -60,8 +58,6 @@ scissors.onclick = (event) => {
     getComputerChoice();
     var computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
-    var humanScore = 0;
-    var computerScore = 0;
     var roundResult = playRound(humanChoice,computerChoice);
     document.querySelector("#roundResult").innerText = roundResult;
     if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
@@ -81,7 +77,7 @@ scissors.onclick = (event) => {
     else {
         document.querySelector("#endMessage").innerText = "The game is a draw! Try again?";
     }
-}; */
+};
 
 function getComputerChoice() {
     let randomNumber = Math.random() * 3;
