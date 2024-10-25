@@ -4,8 +4,6 @@ rock.onclick = (event) => {
     getComputerChoice();
     var computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
-    var humanScore = 0;
-    var computerScore = 0;
     var roundResult = playRound(humanChoice,computerChoice);
     document.querySelector("#roundResult").innerText = roundResult;
     if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
@@ -125,3 +123,23 @@ function playRound(humanChoice, computerChoice) {
         return "It's a tie!";
     }
 };
+
+var humanScore = 0;
+var computerScore = 0;
+if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
+    computerScore ++;
+}
+else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
+    humanScore ++;
+}
+document.querySelector("#roundScore").innerText = "Your score is: " + humanScore;
+document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
+if (humanScore > computerScore) {
+    document.querySelector("#endMessage").innerText = "Congratulations! You won the game!";
+}
+else if (humanScore < computerScore) {
+    document.querySelector("#endMessage").innerText = "You lost the game! Try again?";
+}
+else {
+    document.querySelector("#endMessage").innerText = "The game is a draw! Try again?";
+}
