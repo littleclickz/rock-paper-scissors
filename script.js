@@ -1,16 +1,7 @@
 let rock = document.querySelector("#rock");
 rock.onclick = (event) => {
     let humanChoice = "rock";
-    function getComputerChoice() {
-        let randomNumber = Math.random() * 3;
-        if (randomNumber <= 1) {
-            return "rock";
-        }
-        else if (randomNumber > 1 && randomNumber <= 2) {
-            return "paper";
-        }
-        else return "scissors";
-    }
+    getComputerChoice();
     var computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
     var humanScore = 0;
@@ -39,16 +30,7 @@ rock.onclick = (event) => {
 let paper = document.querySelector("#paper");
 paper.onclick = (event) => {
     let humanChoice = "paper";
-    function getComputerChoice() {
-        let randomNumber = Math.random() * 3;
-        if (randomNumber <= 1) {
-            return "rock";
-        }
-        else if (randomNumber > 1 && randomNumber <= 2) {
-            return "paper";
-        }
-        else return "scissors";
-    }
+    getComputerChoice();
     var computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
     var humanScore = 0;
@@ -77,16 +59,7 @@ paper.onclick = (event) => {
 let scissors = document.querySelector("#scissors");
 scissors.onclick = (event) => {
     let humanChoice = "scissors";
-    function getComputerChoice() {
-        let randomNumber = Math.random() * 3;
-        if (randomNumber <= 1) {
-            return "rock";
-        }
-        else if (randomNumber > 1 && randomNumber <= 2) {
-            return "paper";
-        }
-        else return "scissors";
-    }
+    getComputerChoice();
     var computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
     var humanScore = 0;
@@ -111,6 +84,17 @@ scissors.onclick = (event) => {
         document.querySelector("#endMessage").innerText = "The game is a draw! Try again?";
     }
 };
+
+function getComputerChoice() {
+    let randomNumber = Math.random() * 3;
+    if (randomNumber <= 1) {
+        return "rock";
+    }
+    else if (randomNumber > 1 && randomNumber <= 2) {
+        return "paper";
+    }
+    else return "scissors";
+}
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === "rock" && computerChoice === "rock") {
