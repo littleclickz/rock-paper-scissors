@@ -27,7 +27,7 @@ rock.onclick = (event) => {
     }
 };
 
-let paper = document.querySelector("#paper");
+/* let paper = document.querySelector("#paper");
 paper.onclick = (event) => {
     let humanChoice = "paper";
     getComputerChoice();
@@ -83,7 +83,7 @@ scissors.onclick = (event) => {
     else {
         document.querySelector("#endMessage").innerText = "The game is a draw! Try again?";
     }
-};
+}; */
 
 function getComputerChoice() {
     let randomNumber = Math.random() * 3;
