@@ -7,7 +7,7 @@ rock.onclick = (event) => {
     var humanScore = 0;
     var computerScore = 0;
     var roundResult = playRound(humanChoice,computerChoice);
-    document.querySelector("#roundResult").innerText = playRound(humanChoice,computerChoice);
+    document.querySelector("#roundResult").innerText = roundResult;
     if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
         computerScore ++;
     }
@@ -36,7 +36,7 @@ paper.onclick = (event) => {
     var humanScore = 0;
     var computerScore = 0;
     var roundResult = playRound(humanChoice,computerChoice);
-    document.querySelector("#roundResult").innerText = playRound(humanChoice,computerChoice);
+    document.querySelector("#roundResult").innerText = roundResult;
     if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
         computerScore ++;
     }
@@ -65,7 +65,7 @@ scissors.onclick = (event) => {
     var humanScore = 0;
     var computerScore = 0;
     var roundResult = playRound(humanChoice,computerChoice);
-    document.querySelector("#roundResult").innerText = playRound(humanChoice,computerChoice);
+    document.querySelector("#roundResult").innerText = roundResult;
     if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
         computerScore ++;
     }
