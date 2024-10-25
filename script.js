@@ -94,7 +94,7 @@ function getComputerChoice() {
         return "paper";
     }
     else return "scissors";
-}
+};
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === "rock" && computerChoice === "rock") {
@@ -124,19 +124,4 @@ function playRound(humanChoice, computerChoice) {
     else if (humanChoice === "scissors" && computerChoice === "scissors") {
         return "It's a tie!";
     }
-}
-// everything under here makes additional rounds happen - but how do I wrap the playGame function around the above
-// stuff to clean up the code?
-
-/* var computerChoice = getComputerChoice();
-var humanChoice = getHumanChoice();
-playRound(humanChoice, computerChoice);
-var roundResult = playRound(humanChoice,computerChoice);
-console.log(roundResult);
-if (roundResult === "You lose! Paper beats rock." || roundResult === "You lose! Scissors beat paper." || roundResult === "You lose! Rock beats scissors.") {
-    computerScore ++;
-}
-else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
-    humanScore ++;
-}
-console.log("Your score is: " + humanScore);*/
+};
