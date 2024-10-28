@@ -16,14 +16,16 @@ rock.onclick = (event) => {
         humanScore ++;
     }
     document.querySelector("#score").innerText = "Your score is: " + humanScore;
-    document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
-    if (humanScore > computerScore) {
+    if (humanScore > computerScore && (humanScore >= 5 || computerScore >= 5)) {
+        document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
         document.querySelector("#endMessage").innerText = "Congratulations! You won the tournament!";
     }
-    else if (humanScore < computerScore) {
+    else if (humanScore < computerScore && (humanScore >= 5 || computerScore >= 5)) {
+        document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
         document.querySelector("#endMessage").innerText = "You lost the tournament! Try again?";
     }
-    else {
+    else if (humanScore === computerScore && (humanScore >= 5 || computerScore >= 5)) {
+        document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
         document.querySelector("#endMessage").innerText = "The tournament is a draw! Try again?";
     }
 };
@@ -43,14 +45,16 @@ paper.onclick = (event) => {
         humanScore ++;
     }
     document.querySelector("#score").innerText = "Your score is: " + humanScore;
-    document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
-    if (humanScore > computerScore) {
+    if (humanScore > computerScore && (humanScore >= 5 || computerScore >= 5)) {
+        document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
         document.querySelector("#endMessage").innerText = "Congratulations! You won the tournament!";
     }
-    else if (humanScore < computerScore) {
+    else if (humanScore < computerScore && (humanScore >= 5 || computerScore >= 5)) {
+        document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
         document.querySelector("#endMessage").innerText = "You lost the tournament! Try again?";
     }
-    else {
+    else if (humanScore === computerScore && (humanScore >= 5 || computerScore >= 5)) {
+        document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
         document.querySelector("#endMessage").innerText = "The tournament is a draw! Try again?";
     }
 };
@@ -70,14 +74,16 @@ scissors.onclick = (event) => {
         humanScore ++;
     }
     document.querySelector("#score").innerText = "Your score is: " + humanScore;
-    document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
-    if (humanScore > computerScore) {
+    if (humanScore > computerScore && (humanScore >= 5 || computerScore >= 5)) {
+        document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
         document.querySelector("#endMessage").innerText = "Congratulations! You won the tournament!";
     }
-    else if (humanScore < computerScore) {
+    else if (humanScore < computerScore && (humanScore >= 5 || computerScore >= 5)) {
+        document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
         document.querySelector("#endMessage").innerText = "You lost the tournament! Try again?";
     }
-    else {
+    else if (humanScore === computerScore && (humanScore >= 5 || computerScore >= 5)) {
+        document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
         document.querySelector("#endMessage").innerText = "The tournament is a draw! Try again?";
     }
 };
