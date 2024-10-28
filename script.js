@@ -15,16 +15,16 @@ rock.onclick = (event) => {
     else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
         humanScore ++;
     }
-    document.querySelector("#roundScore").innerText = "Your score is: " + humanScore;
+    document.querySelector("#score").innerText = "Your score is: " + humanScore;
     document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
     if (humanScore > computerScore) {
-        document.querySelector("#endMessage").innerText = "Congratulations! You won the game!";
+        document.querySelector("#endMessage").innerText = "Congratulations! You won the tournament!";
     }
     else if (humanScore < computerScore) {
-        document.querySelector("#endMessage").innerText = "You lost the game! Try again?";
+        document.querySelector("#endMessage").innerText = "You lost the tournament! Try again?";
     }
     else {
-        document.querySelector("#endMessage").innerText = "The game is a draw! Try again?";
+        document.querySelector("#endMessage").innerText = "The tournament is a draw! Try again?";
     }
 };
 
@@ -42,16 +42,16 @@ paper.onclick = (event) => {
     else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
         humanScore ++;
     }
-    document.querySelector("#roundScore").innerText = "Your score is: " + humanScore;
+    document.querySelector("#score").innerText = "Your score is: " + humanScore;
     document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
     if (humanScore > computerScore) {
-        document.querySelector("#endMessage").innerText = "Congratulations! You won the game!";
+        document.querySelector("#endMessage").innerText = "Congratulations! You won the tournament!";
     }
     else if (humanScore < computerScore) {
-        document.querySelector("#endMessage").innerText = "You lost the game! Try again?";
+        document.querySelector("#endMessage").innerText = "You lost the tournament! Try again?";
     }
     else {
-        document.querySelector("#endMessage").innerText = "The game is a draw! Try again?";
+        document.querySelector("#endMessage").innerText = "The tournament is a draw! Try again?";
     }
 };
 
@@ -69,16 +69,16 @@ scissors.onclick = (event) => {
     else if (roundResult === "You win! Paper beats rock." || roundResult === "You win! Scissors beat paper." || roundResult === "You win! Rock beats scissors.") {
         humanScore ++;
     }
-    document.querySelector("#roundScore").innerText = "Your score is: " + humanScore;
+    document.querySelector("#score").innerText = "Your score is: " + humanScore;
     document.querySelector("#finalScore").innerText = "The final scores are " + computerScore + " points for the computer and " + humanScore + " points for you."
     if (humanScore > computerScore) {
-        document.querySelector("#endMessage").innerText = "Congratulations! You won the game!";
+        document.querySelector("#endMessage").innerText = "Congratulations! You won the tournament!";
     }
     else if (humanScore < computerScore) {
-        document.querySelector("#endMessage").innerText = "You lost the game! Try again?";
+        document.querySelector("#endMessage").innerText = "You lost the tournament! Try again?";
     }
     else {
-        document.querySelector("#endMessage").innerText = "The game is a draw! Try again?";
+        document.querySelector("#endMessage").innerText = "The tournament is a draw! Try again?";
     }
 };
 
